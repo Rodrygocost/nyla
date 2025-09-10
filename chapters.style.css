@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+/* containers */
+
+.navbar-h {
+  width: 100%;
+  height: 10%;
+  padding: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  position: absolute;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.main-parallax {
+  display: flex;
+  flex-direction: column;
+  min-width: auto;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/Nós.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main-text {
+  display: flex;
+  width: auto;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /* bg */
+
+  background: -webkit-linear-gradient(left, #7d1a87, #3e0376);
+  background: -moz-linear-gradient(left, #7d1a87, #3e0376);
+  background: -ms-linear-gradient(left, #7d1a87, #3e0376);
+  background: -o-linear-gradient(left, #7d1a87, #3e0376);
+  background: linear-gradient(to right, #7d1a87, #3e0376);
+  box-shadow: 0 0 20px #000;
+}
+
+.main-blur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  padding: 100px;
+  width: 900px;
+  max-height: 2500px;
+  border-radius: 3rem;
+  background: transparent;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.blur-2 {
+  width: 900px;
+  height: 4750px;
+}
+/* img */
+
+.history-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: 80px 0;
+  box-shadow: 0 0 10px #000;
+}
+
+/* texts */
+
+.history-tittle {
+  margin-bottom: 100px;
+}
+
+.parallax-tittle {
+  color: #fff;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 90px;
+  font-weight: bold;
+  position: absolute;
+  animation: float 3s ease-in-out infinite;
+}
+
+.navbar-h a {
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 1000px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 8px 20px;
+  color: #000;
+  scale: 0.7;
+}
+
+.navHome,
+.navLogo {
+  padding: 0 5px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar-h a:hover {
+  transition: all 0.5s ease;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.parallax-subtittle {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 120px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.next-chap {
+  top: 0;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 100px;
+}
+
+.read-btn {
+  padding: 20 10px;
+  border-radius: 22rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.read-btn:hover {
+  transition: 1s;
+  box-shadow: 0 0 20px #fff;
+}
+
+.history-text {
+  font-size: 18px;
+  font-weight: bold;
+  text-indent: 40px;
+  text-align: justify;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-25px);
+  }
+}
+
+/* parallax */
+
+.main-parallax {
+  overflow: hidden;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  text-align: end;
+  justify-content: end;
+  font-family: "Roboto", sans-serif;
+  text-underline-offset: none;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+}
+
+.footerimage {
+  height: 1.2rem;
+  width: 1.25rem;
+  padding-bottom: 0rem;
+}
+
+.link-footer {
+  text-decoration: none;
+  color: #9a9797;
+  text-decoration-line: none;
+}
+
+.link-footer:hover {
+  text-decoration-line: underline;
+}
+
+/* media querry */
+
+@media (max-width: 1000px) {
+  .main-blur {
+    width: 700px;
+    height: 4750px;
+  }
+
+  .blur-2 {
+    height: 5650px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-blur {
+    width: 500px;
+    height: 3670px;
+    padding: 55px;
+  }
+
+  .blur-2 {
+    height: 4380px;
+  }
+
+  .history-img {
+    width: 275px;
+    height: 275px;
+    margin: 70px;
+  }
+
+  .history-text {
+    font-size: 14px;
+  }
+
+  .history-tittle {
+    font-size: 38px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 580px) {
+  .main-blur {
+    width: 400px;
+    height: 3250px;
+    padding: 42px;
+  }
+
+  .blur-2 {
+    height: 3950px;
+  }
+
+  .history-img {
+    width: 250px;
+    height: 250px;
+    margin: 70px;
+  }
+
+  .history-text {
+    font-size: 12px;
+  }
+
+  .history-tittle {
+    font-size: 32px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (max-width: 430px) {
+  .main-blur {
+    width: 300px;
+    height: 4070px;
+    padding: 42px;
+  }
+
+  .blur-2 {
+    height: 4800px;
+  }
+
+  .history-img {
+    width: 200px;
+    height: 200px;
+    margin: 70px;
+  }
+
+  .history-text {
+    font-size: 12px;
+  }
+
+  .history-tittle {
+    font-size: 32px;
+    margin-bottom: 55px;
+  }
+
+  .parallax-tittle {
+    font-size: 55px;
+  }
+
+  .parallax-subtittle {
+    font-size: 10;
+  }
+
+  .navbar-h a {
+    scale: 0.5;
+  }
+}
+
+@media (max-width: 330px) {
+  .main-blur {
+    width: 260px;
+    height: 4800px;
+    padding: 42px;
+  }
+
+  .blur-2 {
+    height: 5520px;
+  }
+
+  .history-img {
+    width: 200px;
+    height: 200px;
+    margin: 70px;
+  }
+
+  .history-text {
+    font-size: 12px;
+  }
+
+  .history-tittle {
+    font-size: 20px;
+    margin-bottom: 55px;
+  }
+
+  .parallax-tittle {
+    font-size: 40px;
+  }
+
+  .parallax-subtittle {
+    font-size: 5;
+  }
+
+  .navbar-h a {
+    scale: 0.5;
+    padding-left: 0px;
+    font-size: 2px;
+  }
+}
